@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STKs Arkiv</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="google_translate_element" tabindex="0"></div>
+    </header>
+    <div class="container">
+        <h1 class="form-title">STK Arkivets tjänster</h1>
+        <form action="#">
+            <div class="main-class">
+                <div class="user-input-box">
+                    <label for="title" title="Titel för programmet">Titel</label>
+                    <input type="text" id="title" tabindex="1" placeholder="Skriv in titel" title="Titel för programmet">
+                </div>
+                <div class="user-input-box">
+                    <label for="description" title="Skriv en kort beskrivning av programmet">Beskrivning</label>
+                    <input type="text" id="description" tabindex="2" placeholder="Skriv en beskrvining" title="Skriv en kort beskrivning av programmet">
+                </div>
+                <div class="user-input-box">
+                    <label for="ageLimit" title="Åldersgräns för programmet">Åldersgräns</label>
+                    <input type="number" id="ageLimit" tabindex="3" placeholder="Ange åldersgräns" title="Åldersgräns för programmet">
+                </div>
+                <div class="user-input-box">
+                    <label for="searchInput" title="Sök efter ett program med antingen åldersgräns alternativt titel. Lämna tom om du inte ska söka efter program">Sök efter</label>
+                    <input type="text" id="searchInput" tabindex="4" placeholder="Sök efter" title="Sök efter ett program med antingen åldersgräns alternativt titel. Lämna tom om du inte ska söka efter program">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="addProgramBtn" tabindex="5">Lägg till program</button>
+                <button type="button" id="showArchiveBtn" tabindex="6">Visa arkiv</button>
+                <button type="button" id="clearArchiveBtn" tabindex="7">Rensa arkivet</button>
+                <button type="button" id="searchForBtn" tabindex="8">Sök efter</button>
+            </div>  
+        </form>
+    </div>
+    <footer>
+        <div id="outputDiv" tabindex="10"></div>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
